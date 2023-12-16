@@ -2,46 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>하빈이 사진 모음</title>
+  <title>하빈아 사랑해</title>
 
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f0f0f0;
     }
 
     .container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
       padding: 20px;
-      background-color: #f0f0f0;
     }
 
     .card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center;
       border: 1px solid #ccc;
       position: relative;
       overflow: hidden;
-    }
-
-    .card img {
-      max-width: 100%;
-      height: auto;
-      max-height: 70%;
-      object-fit: cover;
-      transition: transform 0.3s ease; /* 확대/축소 애니메이션 효과 */
+      transition: transform 0.3s ease;
     }
 
     .card:hover img {
-      transform: scale(1.1); /* 마우스를 올렸을 때 확대되는 효과 */
+      transform: scale(1.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
 
     .card p {
@@ -49,32 +51,37 @@
     }
 
     .slogan {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      text-align: center;
       font-size: 24px;
       font-weight: bold;
       color: #333;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="slogan">하빈이 사진 모음전</div>
+  <!-- 헤더: 슬로건 -->
+  <div class="header">
+    <h1 class="slogan">하빈이 사진 모음전</h1>
+  </div>
+
+  <!-- 이미지 그리드: 카드 -->
   <div class="container">
     <div class="card">
-      <img src="c:\Users\wjddu\OneDrive\사진\붕어빵 먹방.jpg" alt="하빈이 붕어빵 먹방 사진">
-      <p>붕어빵 수확한 하빈이</p>
+      <img src="c:\Users\wjddu\OneDrive\사진\하빈 눈사람.jpg" alt="하빈 이미지 1">
+      <p></p>
     </div>
     <div class="card">
-      <img src="c:\Users\wjddu\OneDrive\사진\하빈 눈사람.jpg" alt="하빈이 눈사람 사진">
-      <p>눈사람 하빈이</p>
+      <img src="c:\Users\wjddu\OneDrive\사진\붕어빵 먹방.jpg" alt="하빈 이미지 2">
+      <p></p>
     </div>
     <div class="card">
-      <img src="c:\Users\wjddu\OneDrive\사진\하빈이 꽈베기 먹방.jpg" alt="하빈이 꽈베기 먹방 사진">
-      <p>꽈베기 먹다 도찰당한 하빈이</p>
+      <img src="c:\Users\wjddu\OneDrive\사진\하빈이 꽈베기 먹방.jpg" alt="하빈 이미지 3">
+      <p></p>
     </div>
-    <!-- 나머지 카드들도 동일한 방법으로 이미지와 설명을 넣어주시면 됩니다 -->
+    <div class="card">
+      <img src="c:\Users\wjddu\OneDrive\사진\KakaoTalk_20231216_190010870.jpg" alt="하빈 이미지 3">
+      <p></p>
   </div>
 </body>
 </html>
